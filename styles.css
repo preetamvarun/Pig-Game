@@ -4,3 +4,38 @@
     margin : 0rem;
     box-sizing : border-box;
 }
+
+:root{
+    --body-backgroundColor : #9D3157;
+    --player1Bck : #D8AFBE;
+    --player2Bck : #B97A98;
+}
+
+body{
+    background-color: var(--body-backgroundColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    background-color: #fff;
+    height: 85%;
+    width : 80%;
+    display: flex;
+}
+
+.mainContainer .player1, .mainContainer .player2{
+    height : 100%;
+    width : 50%;
+}
+
+.mainContainer .player1{
+    background-color : var(--player1Bck);
+}
+
+.mainContainer .player2{
+    background-color : var(--player2Bck);
+}
+
