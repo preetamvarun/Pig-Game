@@ -12,6 +12,7 @@
 }
 
 body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--body-backgroundColor);
     height: 100vh;
     display: flex;
@@ -29,6 +30,7 @@ body{
 .mainContainer .player1, .mainContainer .player2{
     height : 100%;
     width : 50%;
+    display: flex;
 }
 
 .mainContainer .player1{
@@ -39,3 +41,6 @@ body{
     background-color : var(--player2Bck);
 }
 
+.mainContainer .player1 .playerCard h2, .mainContainer .player2 .playerCard h2{
+    margin-bottom: 0.8rem;
+}
