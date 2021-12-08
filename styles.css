@@ -115,3 +115,6 @@ body{
     text-align: center;
 }
 
+.assets .newGame, .assets .secondHalfAssets .rollDice , .assets .secondHalfAssets .hold :hover{
+    cursor: pointer;
+}
