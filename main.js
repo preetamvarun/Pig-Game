@@ -78,7 +78,6 @@ function holdUserScore(){
     }
 }
 
-
 function calcp1Score(){
     if(r1 !== 1 && r2 !== 1){
         p1CurrentScore += (r1 + r2);
