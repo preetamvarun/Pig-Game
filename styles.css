@@ -32,7 +32,7 @@ body{
     width : 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
 }
@@ -97,10 +97,6 @@ body{
     margin : 0.5rem 0rem;
 }
 
-.assets .newGame{
-    margin-top : 0.8rem;
-}
-
 .assets .newGame, .assets .secondHalfAssets .rollDice , .assets .secondHalfAssets .hold{
     display: flex;
     justify-content: space-evenly;
@@ -109,12 +105,11 @@ body{
 }
 
 .assets .scoreCard{
-    margin-bottom: 0.5rem;
     background-color : white;
     padding : 0.5rem;
     text-align: center;
 }
 
 .assets .newGame, .assets .secondHalfAssets .rollDice , .assets .secondHalfAssets .hold :hover{
-    cursor: pointer;
+    cursor : pointer;
 }
