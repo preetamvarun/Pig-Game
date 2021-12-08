@@ -84,7 +84,7 @@ body{
 }
 
 .assets .dice img{
-    height : 4rem;
+    width : 4rem;
     padding : 0.2rem;
 }
 
@@ -94,7 +94,7 @@ body{
 }
 
 .assets .secondHalfAssets .hold{
-    margin : 0.5rem 0rem;
+    margin: 0.5rem 0rem;
 }
 
 .assets .newGame, .assets .secondHalfAssets .rollDice , .assets .secondHalfAssets .hold{
