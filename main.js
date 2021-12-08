@@ -17,9 +17,6 @@ const dice = document.getElementsByClassName('dice')[0];
 const dice1 = dice.firstElementChild;
 const dice2 = dice.lastElementChild;
 
-console.log(player1Reference)
-console.log(player2Reference)
-
 function changedice1Image(){
     r1 = Math.floor(Math.random() * 6) + 1;
     dice1.src = `./images/dice-${r1}.png`
