@@ -5,6 +5,8 @@ const player1finalScore = document.getElementById('p1Fscore');
 const player1currentScore = document.getElementById('p1Cscore');
 const player2finalScore = document.getElementById('p2Fscore');
 const player2currentScore = document.getElementById('p2Cscore');
+const player1Reference = document.getElementById('player1Ref');
+const player2Reference = document.getElementById('player2Ref');
 const player1Container = document.getElementsByClassName('player1')[0];
 const player2Container = document.getElementsByClassName('player2')[0];
 const playerCard = document.getElementsByClassName('playerCard');
@@ -14,6 +16,9 @@ const newGame = document.getElementById('playAgain');
 const dice = document.getElementsByClassName('dice')[0];
 const dice1 = dice.firstElementChild;
 const dice2 = dice.lastElementChild;
+
+console.log(player1Reference)
+console.log(player2Reference)
 
 function changedice1Image(){
     r1 = Math.floor(Math.random() * 6) + 1;
@@ -31,7 +36,9 @@ function togglePlayers(){
     player1Turn = !player1Turn;
     player2Turn = !player2Turn;
     player1Turn ? player1Container.style.background = '#B97A98' : player1Container.style.background = '#D8AFBE';
+    player1Turn ? player1Reference.style.display = 'inline-block' : player1Reference.style.display = 'none';
     player2Turn ? player2Container.style.background = '#B97A98' : player2Container.style.background = '#D8AFBE';
+    player2Turn ? player2Reference.style.display = 'inline-block' : player2Reference.style.display = 'none';
 }
 
 function resetp1currentScore(){
@@ -46,29 +53,29 @@ function resetp2currentScore(){
 
 function holdUserScore(){
     if(winner === false){
-    if(player1Turn){
-        p1FinalScore += p1CurrentScore;
-        if(p1FinalScore >= 100){
-            playerCard[0].firstElementChild.textContent = 'Winner!';
-            player1finalScore.style.display = 'none';
-            winner = true;
+        if(player1Turn){
+            p1FinalScore += p1CurrentScore;
+            if(p1FinalScore >= 100){
+                playerCard[0].firstElementChild.textContent = 'Winner!';
+                player1finalScore.style.display = 'none';
+                winner = true;
+            } else{
+                player1finalScore.textContent = p1FinalScore;
+                resetp1currentScore();  
+            }      
         } else{
-            player1finalScore.textContent = p1FinalScore;
-            resetp1currentScore();  
-        }      
-    } else{
-        p2FinalScore += p2CurrentScore;
-        if(p2FinalScore >= 100){
-            playerCard[playerCard.length-1].firstElementChild.textContent = 'Winner!';
-            player2finalScore.style.display = 'none';
-            winner = true;
-        } else{
-            player2finalScore.textContent = p2FinalScore;
-            resetp2currentScore();
+            p2FinalScore += p2CurrentScore;
+            if(p2FinalScore >= 100){
+                playerCard[playerCard.length-1].firstElementChild.textContent = 'Winner!';
+                player2finalScore.style.display = 'none';
+                winner = true;
+            } else{
+                player2finalScore.textContent = p2FinalScore;
+                resetp2currentScore();
+            }
         }
+        togglePlayers();
     }
-    togglePlayers();
-}
 }
 
 
@@ -94,9 +101,9 @@ function calcp2Score(){
 
 function diceRoll(){
     if(winner === false){
-    changedice1Image();
-    changedice2Image();
-    player1Turn ? calcp1Score() : calcp2Score();
+        changedice1Image();
+        changedice2Image();
+        player1Turn ? calcp1Score() : calcp2Score();
     }
 }
 

@@ -27,6 +27,19 @@ body{
     display: flex;
 }
 
+.mainContainer .playerCard .playerName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .playerCard .playerName i{
+    font-size : 0.8rem;
+    margin-left : 1rem;
+    margin-bottom : 0.75rem;
+    color : var(--btnColor);
+}
+
 .mainContainer .player1, .mainContainer .player2{
     height : 100%;
     width : 50%;
