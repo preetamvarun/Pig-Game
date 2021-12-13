@@ -1,0 +1,45 @@
+/*Writing media queries for mobile phones*/
+
+@media (max-width : 550px){
+
+    .mainContainer .playerCard .playerName i{
+        font-size: 8px;
+        margin-left : 0.3rem;
+        margin-bottom : 0.5rem;
+    }
+
+    .mainContainer .playerCard p{
+        font-size: 1.5rem;
+    }
+
+    .mainContainer .playerCard h2{
+        font-size : 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    .mainContainer .playerBtn{
+        height : 18%;
+        width : 50%;
+        background-color: var(--btnColor);
+        border-radius: 5%;
+        font-size : 12px;
+    }
+
+    .assets{
+        width : 15%;
+        right : 42.5%;
+    }
+
+    .assets .dice img{
+        padding : 0.2rem;
+        width : 60%;
+    }    
+    .assets .newGame, .assets .secondHalfAssets .rollDice , .assets .secondHalfAssets .hold{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .assets i{
+        margin-bottom : 0.5rem;
+    }
+}
