@@ -60,7 +60,8 @@ function holdUserScore(){
                 player1finalScore.textContent = p1FinalScore;
                 resetp1currentScore();  
             }      
-        } else{
+        } 
+        else{
             p2FinalScore += p2CurrentScore;
             if(p2FinalScore >= 100){
                 playerCard[playerCard.length-1].firstElementChild.textContent = 'Winner!';
