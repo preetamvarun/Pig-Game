@@ -52,7 +52,7 @@ The player can choose to 'Hold', which means that his ROUND score gets added to 
 The first player to reach 100 points or more on GLOBAL score wins the game.
 
 ## 7. Features
-User friendly 🔥
-clean UI ⭐
+User friendly 🔥 <br>
+clean UI ⭐ <br>
 Responsive 😉
 
