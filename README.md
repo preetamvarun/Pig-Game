@@ -10,6 +10,8 @@ A web app that is built with **HTML5,CSS3 & Vanilla JAVASCRIPT**
 - [Installation](#Installation-)
 - [Technologies](#Technologies-Used-)
 - [Game-Rules](#Game-Rules)
+- [live-demo](#live-demo)
+- [features](#features)
 
 ## 1. General Info 📝
 The purpose of this project is to understand and implement the javascript concepts that i've learned to make the user interface look appealing besides having fun along the journey :smiley:.
@@ -51,7 +53,10 @@ BUT, if the player rolls a 1 (in either of the dice), all his ROUND score gets l
 The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, It's the next player's turn<br>
 The first player to reach 100 points or more on GLOBAL score wins the game.
 
-## 7. Features
+## 7. live-demo 👾
+https://p-game.netlify.app/
+
+## 8. Features
 User friendly 🔥 <br>
 clean UI ⭐ <br>
 Responsive 😉
