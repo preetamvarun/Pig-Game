@@ -1,0 +1,9 @@
+@media (max-width : 768px){
+    .mainContainer{
+        height : 55%;
+        width : 95%;
+    }
+    .assets{
+        height : 52%;
+    }
+}
