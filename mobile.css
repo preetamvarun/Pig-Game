@@ -3,7 +3,7 @@
 @media (max-width : 550px){
 
     .mainContainer{
-        height :50%;
+        height :48%;
         width : 95%;
     }
 
@@ -31,7 +31,7 @@
     }
 
     .assets{
-        height: 48%;
+        height: 46%;
         width : 15%;
         right : 42.5%;
     }
