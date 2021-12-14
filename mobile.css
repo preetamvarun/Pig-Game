@@ -2,6 +2,11 @@
 
 @media (max-width : 550px){
 
+    .mainContainer{
+        height :50%;
+        width : 95%;
+    }
+
     .mainContainer .playerCard .playerName i{
         font-size: 8px;
         margin-left : 0.3rem;
@@ -26,6 +31,7 @@
     }
 
     .assets{
+        height: 48%;
         width : 15%;
         right : 42.5%;
     }
