@@ -47,9 +47,10 @@ open index.html with a browser you prefer
 <a name = "Tech"> </a>
 ## 5.Technologies Used ✳️
 
-[![Javascript](https://img.shields.io/badge/Javascript-vanillaJs-orange)](https://devdocs.io/javascript/)   
-[![HTML](https://img.shields.io/badge/HTML-currentVersion5-green)](https://devdocs.io/html/)   
-[![CSS](https://img.shields.io/badge/CSS-currentVersion3-violet)](https://devdocs.io/css/) 
+![HTML5](https://img.shields.io/badge/html5-%231572B6.svg?style=for-the-badge&logo=html5&logoColor=orange)
+![JAVASCRIPT](https://img.shields.io/badge/javascript-%231572B6.svg?style=for-the-badge&logo=javascript&logoColor=green)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
 
 <a name = "gameRules"> </a>
 ## 6. Game Rules
