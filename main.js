@@ -29,13 +29,17 @@ function changedice2Image(){
     dice2.alt = `dice-${r2}`
 }
 
-function togglePlayers(){
-    player1Turn = !player1Turn;
-    player2Turn = !player2Turn;
+function changeColors(){
     player1Turn ? player1Container.style.background = '#B97A98' : player1Container.style.background = '#D8AFBE';
     player1Turn ? player1Reference.style.display = 'inline-block' : player1Reference.style.display = 'none';
     player2Turn ? player2Container.style.background = '#B97A98' : player2Container.style.background = '#D8AFBE';
     player2Turn ? player2Reference.style.display = 'inline-block' : player2Reference.style.display = 'none';
+}
+
+function togglePlayers(){
+    player1Turn = !player1Turn;
+    player2Turn = !player2Turn;
+    changeColors();
 }
 
 function resetp1currentScore(){
@@ -107,5 +111,13 @@ function diceRoll(){
 rollDice.addEventListener('click',diceRoll);
 hold.addEventListener('click',holdUserScore);
 newGame.addEventListener('click', function(){
-    document.location.reload();
+    resetp1currentScore();
+    resetp2currentScore();
+    player1finalScore.textContent = 0;
+    player2finalScore.textContent = 0;
+    p1FinalScore = 0; 
+    p2FinalScore = 0;
+    winner = false;
+    player1Turn = true; player2Turn = false;
+    changeColors();
 });
