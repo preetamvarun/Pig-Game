@@ -19,14 +19,14 @@ const dice2 = dice.lastElementChild;
 
 function changedice1Image(){
     r1 = Math.floor(Math.random() * 6) + 1;
-    dice1.src = `./images/dice-${r1}.png`
-    dice1.alt = `dice-${r1}`
+    dice1.src = `./images/dice-${r1}.png`;
+    dice1.alt = `dice-${r1}`;
 }
 
 function changedice2Image(){
     r2 = Math.floor(Math.random() * 6) + 1;
-    dice2.src = `./images/dice-${r2}.png`
-    dice2.alt = `dice-${r2}`
+    dice2.src = `./images/dice-${r2}.png`;
+    dice2.alt = `dice-${r2}`;
 }
 
 function changeColors(){
