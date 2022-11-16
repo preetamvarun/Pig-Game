@@ -110,14 +110,20 @@ function diceRoll(){
 
 rollDice.addEventListener('click',diceRoll);
 hold.addEventListener('click',holdUserScore);
+
 newGame.addEventListener('click', function(){
-    resetp1currentScore();
-    resetp2currentScore();
-    player1finalScore.textContent = 0;
-    player2finalScore.textContent = 0;
-    p1FinalScore = 0; 
-    p2FinalScore = 0;
-    winner = false;
-    player1Turn = true; player2Turn = false;
-    changeColors();
+    if(winner === false){
+        resetp1currentScore();
+        resetp2currentScore();
+        player1finalScore.textContent = 0;
+        player2finalScore.textContent = 0;
+        p1FinalScore = 0; 
+        p2FinalScore = 0;
+        winner = false;
+        player1Turn = true; player2Turn = false;
+        changeColors();
+    }
+    else{
+        window.location.reload();
+    }
 });
